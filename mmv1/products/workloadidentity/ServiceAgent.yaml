@@ -37,6 +37,14 @@ async:
   result:
     resource_inside_response: true
 
+min_version: beta
+
+examples:
+  - name: "workload_identity_service_agent_basic"
+    primary_resource_id: "primary"
+    exclude_import_test: true
+    min_version: beta
+
 parameters:
   - name: parent
     type: String
@@ -66,11 +74,3 @@ properties:
         - name: serviceProducer
           type: String
           output: true
-
-min_version: beta
-
-examples:
-  - name: "workload_identity_service_agent_basic"
-    primary_resource_id: "primary"
-    exclude_import_test: true
-    min_version: beta
